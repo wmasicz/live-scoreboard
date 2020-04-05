@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/live-scoreboard/static/css/main.bd237add.chunk.css",
-    "main.js": "/live-scoreboard/static/js/main.bd70395b.chunk.js",
-    "main.js.map": "/live-scoreboard/static/js/main.bd70395b.chunk.js.map",
+    "main.js": "/live-scoreboard/static/js/main.eb1a5144.chunk.js",
+    "main.js.map": "/live-scoreboard/static/js/main.eb1a5144.chunk.js.map",
     "runtime-main.js": "/live-scoreboard/static/js/runtime-main.f04dabe7.js",
     "runtime-main.js.map": "/live-scoreboard/static/js/runtime-main.f04dabe7.js.map",
     "static/js/2.794e627f.chunk.js": "/live-scoreboard/static/js/2.794e627f.chunk.js",
     "static/js/2.794e627f.chunk.js.map": "/live-scoreboard/static/js/2.794e627f.chunk.js.map",
     "index.html": "/live-scoreboard/index.html",
-    "precache-manifest.2ca5634c70e1f913ee643e7fbdd4cf98.js": "/live-scoreboard/precache-manifest.2ca5634c70e1f913ee643e7fbdd4cf98.js",
+    "precache-manifest.60f819be76bc595a3c5a7f1be8429ed9.js": "/live-scoreboard/precache-manifest.60f819be76bc595a3c5a7f1be8429ed9.js",
     "service-worker.js": "/live-scoreboard/service-worker.js",
     "static/css/main.bd237add.chunk.css.map": "/live-scoreboard/static/css/main.bd237add.chunk.css.map",
     "static/js/2.794e627f.chunk.js.LICENSE.txt": "/live-scoreboard/static/js/2.794e627f.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.f04dabe7.js",
     "static/js/2.794e627f.chunk.js",
     "static/css/main.bd237add.chunk.css",
-    "static/js/main.bd70395b.chunk.js"
+    "static/js/main.eb1a5144.chunk.js"
   ]
 }
