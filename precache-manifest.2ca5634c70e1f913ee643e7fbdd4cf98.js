@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "88f8b646d693e0e212336fad1329f2e7",
+    "revision": "fb9fec6bb0425f67b7dab9be1aad3a47",
     "url": "/live-scoreboard/index.html"
   },
   {
-    "revision": "a46d4071ed858ddaf902",
-    "url": "/live-scoreboard/static/css/main.d723f55a.chunk.css"
+    "revision": "ce2a400710bdf50292ec",
+    "url": "/live-scoreboard/static/css/main.bd237add.chunk.css"
   },
   {
     "revision": "03aa909435ff6f48afb7",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/live-scoreboard/static/js/2.794e627f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a46d4071ed858ddaf902",
-    "url": "/live-scoreboard/static/js/main.26bcad0f.chunk.js"
+    "revision": "ce2a400710bdf50292ec",
+    "url": "/live-scoreboard/static/js/main.bd70395b.chunk.js"
   },
   {
     "revision": "5e022c8c252fdc14db72",
