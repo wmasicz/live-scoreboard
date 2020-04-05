@@ -1,5 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Demo
+
+You can view demo at:
+https://wmasicz.github.io/live-scoreboard/
+
 ## Available Scripts
 
 In the project directory, you can run:
