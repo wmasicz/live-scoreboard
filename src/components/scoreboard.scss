@@ -37,3 +37,9 @@
     text-transform: uppercase;
     width:105px;
 }
+
+.timeControls .btn {
+    &:last-of-type {
+        margin-bottom: 20px;
+    }
+}

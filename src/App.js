@@ -22,6 +22,18 @@ class App extends Component {
     this.toggleTime = this.toggleTime.bind(this);
 }
 
+setMinutes = (e) => {
+  this.setState({
+    minutes: e.target.value
+  })
+};
+
+setSeconds = (e) => {
+  this.setState({
+    seconds: e.target.value
+  })
+};
+
 homeIncrement = () => {
   this.setState((prevState) => ({
       homeResult: prevState.homeResult + 1
@@ -128,6 +140,12 @@ reset = () => {
             <h3>Czas</h3>
             <button onClick={this.toggleTime} className="btn">{this.state.toggle}</button>
             <button onClick={this.reset} className="btn">Reset</button>
+
+            <form onSubmit={this.submit}>
+              <h3>Wprowadź czas</h3>
+              <input type="text" placeholder="wpisz minuty" onChange={this.setMinutes} value={this.state.minutes} />
+              <input type="text" placeholder="wpisz sekundy" onChange={this.setSeconds} value={this.state.seconds} />
+            </form>
           </div>
           <div className="resultControls box">
             <div className="box-inner">
@@ -146,7 +164,6 @@ reset = () => {
               <h3>Nazwy drużyn</h3>
               <input type="text" placeholder="3 inicjały gospodarza" onChange={this.setHome} value={this.state.home} />
               <input type="text" placeholder="3 inicjały gościa" onChange={this.setAway} value={this.state.away} />
-              {/* <input type="submit" className="btn" value="Potwierdź" /> */}
             </form>
           </div>
         </div>
