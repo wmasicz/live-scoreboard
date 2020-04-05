@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/live-scoreboard/static/css/main.8be58f50.chunk.css",
+    "main.css": "/live-scoreboard/static/css/main.d723f55a.chunk.css",
     "main.js": "/live-scoreboard/static/js/main.26bcad0f.chunk.js",
     "main.js.map": "/live-scoreboard/static/js/main.26bcad0f.chunk.js.map",
     "runtime-main.js": "/live-scoreboard/static/js/runtime-main.f04dabe7.js",
@@ -8,15 +8,15 @@
     "static/js/2.794e627f.chunk.js": "/live-scoreboard/static/js/2.794e627f.chunk.js",
     "static/js/2.794e627f.chunk.js.map": "/live-scoreboard/static/js/2.794e627f.chunk.js.map",
     "index.html": "/live-scoreboard/index.html",
-    "precache-manifest.6c2a73d9770e34057cd5453cf4cc30fa.js": "/live-scoreboard/precache-manifest.6c2a73d9770e34057cd5453cf4cc30fa.js",
+    "precache-manifest.93a78effd1aa1862d9e36c697a8aa35a.js": "/live-scoreboard/precache-manifest.93a78effd1aa1862d9e36c697a8aa35a.js",
     "service-worker.js": "/live-scoreboard/service-worker.js",
-    "static/css/main.8be58f50.chunk.css.map": "/live-scoreboard/static/css/main.8be58f50.chunk.css.map",
+    "static/css/main.d723f55a.chunk.css.map": "/live-scoreboard/static/css/main.d723f55a.chunk.css.map",
     "static/js/2.794e627f.chunk.js.LICENSE.txt": "/live-scoreboard/static/js/2.794e627f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f04dabe7.js",
     "static/js/2.794e627f.chunk.js",
-    "static/css/main.8be58f50.chunk.css",
+    "static/css/main.d723f55a.chunk.css",
     "static/js/main.26bcad0f.chunk.js"
   ]
 }
