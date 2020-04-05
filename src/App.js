@@ -7,6 +7,8 @@ class App extends Component {
     super(props);
     this.state = {
         isOn: false,
+        initialSeconds: '',
+        initialMinutes: '',
         seconds: 0,
         minutes: 0,
         min: '',
@@ -18,21 +20,26 @@ class App extends Component {
         away: '',
         awayResult: 0
     }
-
+    this.setSeconds = this.setSeconds.bind(this);
+    this.setMinutes = this.setMinutes.bind(this);
     this.toggleTime = this.toggleTime.bind(this);
 }
 
+// ręczne ustawianie czasu
+
 setMinutes = (e) => {
   this.setState({
-    minutes: e.target.value
+    initialMinutes: parseInt(e.target.value, 10)
   })
 };
 
 setSeconds = (e) => {
   this.setState({
-    seconds: e.target.value
+    initialSeconds: parseInt(e.target.value, 10)
   })
 };
+
+// modyfikacja wyniku
 
 homeIncrement = () => {
   this.setState((prevState) => ({
@@ -58,6 +65,8 @@ awayDecrement = () => {
   }));
 }
 
+// modyfikacja nazwy drużyn
+
 setHome = (e) => {
   this.setState({
       home: e.target.value
@@ -73,24 +82,38 @@ setAway = (e) => {
 submit = e => {
   e.preventDefault();
 if (this.state.home !== '' && this.state.away !== '') {
-  console.log("no to wysylam", this.state);
-  this.setState({
-      success: true
-  })
-}
+    this.setState({
+        success: true
+    })
+  }
 };
 
+// timer
+
 toggleTime = () => {
+  if (this.state.initialMinutes>0) {
+    this.setState((prevState) => ({
+      minutes: this.state.initialMinutes
+    }));
+  }
+
+  if (this.state.initialSeconds>0) {
+    this.setState((prevState) => ({
+      seconds: this.state.initialSeconds,
+      initialSeconds: this.state.seconds
+    }));
+  }
+
   if(this.state.isOn === false) {
       this.sec = setInterval(() => {
           this.setState((prevState) => ({
-              seconds: prevState.seconds + 1,
+            seconds: prevState.seconds +1,
           }));
       }, 1000)
 
       this.min = setInterval(() => {
           this.setState((prevState) => ({
-              minutes: prevState.minutes + 1
+            minutes: prevState.minutes +1,
           }));
       }, 60000)
       this.setState((prevState) => ({
@@ -100,7 +123,9 @@ toggleTime = () => {
   } else {
       this.setState((prevState) => ({
           isOn: false,
-          toggle: 'Start'
+          toggle: 'Start',
+          initialSeconds: '',
+          initialMinutes: ''
       }));
       clearInterval(this.sec)
       clearInterval(this.min)
@@ -111,16 +136,15 @@ reset = () => {
   this.setState((prevState) => ({
       isOn: false,
       seconds: 0,
-      minutes: 0
+      minutes: 0,
+      initialSeconds: '',
+      initialMinutes: ''
   }));
 }
 
   render() {
     return (
       <div className="app">
-        {/* <Timer />
-        <Scoreboard /> */}
-
         <div className="board">
           <div className="timer">
             {`0${this.state.minutes}`.slice(-2)}:{`0${this.state.seconds%60}`.slice(-2)}
@@ -143,8 +167,8 @@ reset = () => {
 
             <form onSubmit={this.submit}>
               <h3>Wprowadź czas</h3>
-              <input type="text" placeholder="wpisz minuty" onChange={this.setMinutes} value={this.state.minutes} />
-              <input type="text" placeholder="wpisz sekundy" onChange={this.setSeconds} value={this.state.seconds} />
+              <input type="number" placeholder="wpisz minuty" onChange={this.setMinutes} value={this.state.initialMinutes} />
+              <input type="number" placeholder="wpisz sekundy" onChange={this.setSeconds} value={this.state.initialSeconds} />
             </form>
           </div>
           <div className="resultControls box">
