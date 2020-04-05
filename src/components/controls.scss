@@ -1,0 +1,80 @@
+.controls {
+    margin-top:300px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Rubik', sans-serif;
+}
+
+.box {
+    font-family: 'Rubik', sans-serif;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    margin: 10px;
+    border: 1px solid #f1f1f1;
+    background: #40133C;
+    border-radius: 5px;
+
+    .box-inner {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Rubik', sans-serif;
+
+        &:first-of-type {
+            margin-bottom: 10px;
+        }
+    }
+
+    h3 {
+        margin-bottom: 10px;
+        font-family: 'Rubik', sans-serif;
+        color: #fff;
+        font-weight: 500;
+    }
+}
+
+input {
+    font-family: 'Rubik', sans-serif;
+    width:100%;
+    border-radius: 3px;
+    border: 1px solid #dedede;
+    padding: 5px;
+    color: #333;
+    background: #fff;
+
+    &:first-of-type {
+        margin-bottom: 10px;
+    }
+
+    &::-webkit-input-placeholder { /* Edge */
+      color: #bbb;
+      font-weight: lighter;
+    }
+    
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: #bbb;
+      font-weight: lighter;
+    }
+    
+    &::placeholder {
+      color: #bbb;
+      font-weight: lighter;
+    }
+
+    &::-webkit-input-focus { /* Edge */
+        border: 1px solid #6BB5FF;
+        outline: none;  
+    }
+    
+    &:-ms-input-focus { /* Internet Explorer 10-11 */
+        border: 1px solid #6BB5FF;
+        outline: none;
+    }
+    
+    &:focus {
+        border: 1px solid #6BB5FF;
+        outline: none;
+    }
+}
+

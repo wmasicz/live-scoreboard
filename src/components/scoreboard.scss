@@ -1,0 +1,36 @@
+.board {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.timer {
+    width:175px;
+    padding:20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background: #27C9A1;
+    color: #40133C;
+    font-weight: 600;
+    font-size: 3em;
+    border-top-left-radius: 25px;
+}
+
+.scoreBoard {
+    width:400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+    background: #40133C;
+    color: #fff;
+    font-weight: 600;
+    font-size: 3em;
+    border-bottom-right-radius: 25px;
+}
+
+.teamName {
+    text-transform: uppercase;
+    width:105px;
+}
